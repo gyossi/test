@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>html5문서</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<style>
+		div {width: 200px; height: 200px; background: blue; margin-top: 300px;}
+	</style>
+<script>
+$(function(){
+	const a1=$("div").offset().top;
+	alert(a1);
+	/*scrollTop()은 브라우저 자체와 스크롤된 거리를 계산
+	사용자가 스크롤 한 거리 (가변적) 보여지는 화면의 꼭대기가 0
+	.offset().top은 브라우저가 아닌 특정 요소의 문서 끝에서 부터의 y축 위치를 계산, 총 웹 화면의 꼭대기가 0*/
+});
+</script>
+</head>
+<body>
+	<div></div>
+</body>
+</html>
